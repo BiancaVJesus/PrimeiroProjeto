@@ -74,9 +74,7 @@ void ExibirOpcoesDoMenu()
     void RegistrarBandas()
     {
         Console.Clear();
-        Console.WriteLine("*********************");
-        Console.WriteLine("Registro de bandas");
-        Console.WriteLine("*********************\n");
+        ExibirTituloDaOpcao("Registro das bandas");
         Console.Write("Digite o nome da banda que deseja registrar: ");
         string nomeDaBanda = Console.ReadLine()!;
         listaDasBandas.Add(nomeDaBanda);
@@ -89,9 +87,7 @@ void ExibirOpcoesDoMenu()
     void MostrarBandasRegistradas()
 {
     Console.Clear();
-    Console.WriteLine("*************************************");
-    Console.WriteLine("Exibindo todas as bandas registradas");
-    Console.WriteLine("*************************************\n");
+    ExibirTituloDaOpcao("Exibir todas as bandas registradas");
 
 
     //for(int i = 0; i < listaDasBandas.Count; i++) 
@@ -121,31 +117,70 @@ void ExibirOpcoesDoMenu()
 
 }
 
-ExibirLogo();
+
+void ExibirTituloDaOpcao(string titulo)
+{
+    int quantidadeDeLetras = titulo.Lenght;
+    // o empty vai dizer ao código para pegar a string vazia 
+    // o padleft vai colocar ao lado esquerdo os asteriscos de acordo com a quantidade de letras
+    String asteriscos = String.Empty.PadLeft(quantidadeDeLetras)
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos);
+
+
+}
+
 ExibirOpcoesDoMenu();
 
-// 1 - Criar uma variável chamada curso, e guarde nela o nome do curso estudado.
-
-String curso = "C#: Criando sua primeira aplicação";
-
-// 2 - Mostrar o conteúdo da variável curso no console.
-
-Console.WriteLine(curso);
-
-// 3 - Criar uma variável chamada nome e outra chamada sobrenome e guardar nelas seu nome e sobrenome.
 
 
-//String nome = "Bianca";
-//String sobrenome = "Veronez";
-
-// 4 - Mostrar na tela o nome dos instrutores do curso.
-
-String nomei1 = "Daniel Portugal";
-String nomei2 = "Guilherme Lima";
 
 
-Console.WriteLine(nomei1 + " " + nomei2);
 
 
-// testando alteração
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//// 1 - Criar uma variável chamada curso, e guarde nela o nome do curso estudado.
+
+//String curso = "C#: Criando sua primeira aplicação";
+
+//// 2 - Mostrar o conteúdo da variável curso no console.
+
+//Console.WriteLine(curso);
+
+//// 3 - Criar uma variável chamada nome e outra chamada sobrenome e guardar nelas seu nome e sobrenome.
+
+
+////String nome = "Bianca";
+////String sobrenome = "Veronez";
+
+//// 4 - Mostrar na tela o nome dos instrutores do curso.
+
+//String nomei1 = "Daniel Portugal";
+//String nomei2 = "Guilherme Lima";
+
+
+//Console.WriteLine(nomei1 + " " + nomei2);
+
+
+//// testando alteração no git
+
+
 
